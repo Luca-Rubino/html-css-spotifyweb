@@ -5,9 +5,50 @@
 }
 
 body {
+    max-width: 1920px;
+    margin: 0 auto;
     background-color: whitesmoke;
 }
 
 img {
     height: 4rem;
+}
+
+input[type="image"] {
+    width: 1rem;
+}
+
+header {
+    position: fixed;
+    width: 40vh;
+    height: 80vh;
+    background-color: #000000;
+    color: white;
+}
+
+header li {
+    text-transform: capitalize;
+}
+
+header nav > ul:nth-of-type(2) > li:first-child {
+    font-variant: small-caps;
+}
+
+main {
+    margin-left: 40vh;
+}
+
+footer {
+    background-color: #282828;
+    color: white;
+    position: fixed;
+    top: 80vh;
+    width: 1920px;
+    height: 20vh;
+}
+
+/* classi */
+
+.flex {
+    display: flex;
 }
