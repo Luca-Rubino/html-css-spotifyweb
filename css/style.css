@@ -4,10 +4,17 @@
     padding: 0;
 }
 
+/* impostazioni generali */
+
 body {
-    max-width: 1920px;
+    max-width: 1955px;
+    min-width: 1900px;
     margin: 0 auto;
     background-color: whitesmoke;
+}
+
+ul {
+    list-style: none;
 }
 
 img {
@@ -17,6 +24,8 @@ img {
 input[type="image"] {
     width: 1rem;
 }
+
+/* inpostazioni header */
 
 header {
     position: fixed;
@@ -34,16 +43,21 @@ header nav > ul:nth-of-type(2) > li:first-child {
     font-variant: small-caps;
 }
 
+/* inpostazioni main */
+
 main {
     margin-left: 40vh;
+    margin-bottom: 20vh;
 }
+
+/* inpostazioni footer */
 
 footer {
     background-color: #282828;
     color: white;
     position: fixed;
     top: 80vh;
-    width: 1920px;
+    min-width: 1920px;
     height: 20vh;
 }
 
