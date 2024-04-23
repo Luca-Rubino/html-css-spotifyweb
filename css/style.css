@@ -7,6 +7,8 @@
 /* impostazioni generali */
 
 body {
+    min-width: 50vw;
+    margin: 0 auto;
     font-family: "Montserrat", sans-serif;
     background-color: whitesmoke;
 }
@@ -15,20 +17,18 @@ ul {
     list-style: none;
 }
 
-img {
-    height: 3rem;
-}
-
 input[type="image"] {
     width: 1rem;
+}
+
+img {
+    width: 10vw;
 }
 
 /* inpostazioni header */
 
 header {
-    position: fixed;
-    width: calc(100% - 85vw);
-    height: 80vh;
+    width: 15vw;
     background-color: #000000;
     color: white;
 }
@@ -44,16 +44,24 @@ header nav > ul:nth-of-type(2) > li:first-child {
 /* inpostazioni main */
 
 main {
-    margin-left: calc(100% - 85vw);
+    position: fixed;
     color: white;
     background-color: #141922;
-    height: 82.5vh;
     overflow: scroll;
-    width: 85vw;
+    width: 84.1vw;
+    height: 100vh;
 }
 
 main > div {
     justify-content: space-between;
+}
+
+main > nav ul {
+    justify-content: center;
+}
+
+main > nav ul li {
+    padding: 1rem;
 }
 
 /* inpostazioni footer */
@@ -61,14 +69,13 @@ main > div {
 footer {
     background-color: #282828;
     color: white;
-    position: fixed;
-    top: 80vh;
     width: 100vw;
-    height: calc(100% - 27vh);
+    height: calc(100vh - 82.5vh);
 }
 
 /* classi */
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
 }
