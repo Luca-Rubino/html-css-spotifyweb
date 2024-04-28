@@ -31,6 +31,10 @@ header li {
     text-transform: capitalize;
 }
 
+header nav img {
+    width: 20vh;
+}
+
 header nav > ul:nth-of-type(2) > li:first-child {
     font-variant: small-caps;
 }
@@ -53,11 +57,11 @@ main > div {
 main > div:first-child {
     position: sticky;
     top: 0;
-    height: 8vh;
+    height: 9.5vh;
 }
 
 main > nav {
-    padding-top: 8vh;
+    padding-top: 9.5vh;
 }
 
 main nav ul {
@@ -123,6 +127,28 @@ main {
 
 .collum {
     flex-direction: column;
+}
+
+.bg-080b12 {
+    background-color: #080b12;
+}
+
+.buttom {
+    background-color: #00000000;
+    border: 1.5px solid white;
+    color: white;
+    font-variant: small-caps;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 50rem;
+    padding: .7rem 2rem;
+}
+
+.buttom:hover {
+    font-size: 1.3rem;
+    padding: .9rem 2.2rem;
+    transition: 0.7s;
 }
 
 .articleflex{
