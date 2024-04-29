@@ -7,6 +7,7 @@
 /* impostazioni generali */
 
 body {
+    width: 100vw;
     font-family: "Montserrat", sans-serif;
     background-color: whitesmoke;
 }
@@ -22,7 +23,7 @@ input[type="image"] {
 /* inpostazioni header */
 
 header {
-    width: 350px;
+    width: 230px;
     background-color: #000000;
     color: white;
 }
@@ -49,7 +50,7 @@ main {
     color: white;
     background-color: #141922;
     overflow: auto scroll;
-    width: calc(100% - 350px);
+    width: calc(100% - 230px);
 }
 
 main > div {
@@ -84,6 +85,7 @@ main > nav {
 }
 
 main nav ul {
+    flex-wrap: wrap;
     justify-content: center;
     padding: 2rem 0;
 }
@@ -101,7 +103,7 @@ article p {
 }
 
 section article img {
-    width: 23vh;
+    width: 12.5vw;
 }
 
 section article h3 {
@@ -227,4 +229,53 @@ article > * {
 .music-bar,
 .music-bar > div {
     border-radius: 1rem;
+}
+
+/* media querry xs */
+
+@media (max-width: 576px) {
+    header {
+        width: 100px;
+    }
+
+    header nav img {
+        width: 0;
+        height: 0;
+        padding: 25px 100px 0 0;
+        background: url(../img/logo-small.svg);
+        background-repeat: no-repeat;
+        background-position: 2rem;
+    }
+
+    header nav ul:last-child {
+        display: none;
+    }
+
+    header span.flex {
+        justify-content: center;
+    }
+
+    header span.flex > span.text-gray {
+        display: none;
+    }
+
+    main {
+        width: calc(100% - 100px);
+    }
+}
+
+/* media querry md */
+
+@media (min-width: 576px) and (max-width: 768px) {
+    header {
+        width: 230px;
+    }
+
+    main {
+        width: calc(100% - 230px);
+    }
+
+    section article img {
+        width: 27vw;
+      }
 }
